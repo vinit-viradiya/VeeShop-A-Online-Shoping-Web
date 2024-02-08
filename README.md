@@ -1,1 +1,1 @@
-# VeeShop A Online Shoping Website
+# VeeShop - A Online Shoping Website
