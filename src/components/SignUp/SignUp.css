@@ -1,0 +1,15 @@
+.signUpForm{
+  width: 430px;
+}
+.formWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.pro-title{
+  width: 100%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

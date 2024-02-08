@@ -1,0 +1,16 @@
+:root {
+  --bs-primary-rgb: 69, 76, 92;
+}
+
+* {
+  outline: none;
+  color: rgb(69, 76, 92);
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 0;
+}

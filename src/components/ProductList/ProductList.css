@@ -1,0 +1,27 @@
+.card{
+  transition: all .2s ease-in-out;
+}
+
+.card:hover{
+  scale: 1.05;
+}
+
+.card .image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.card .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pro_detail .image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 530px;
+}

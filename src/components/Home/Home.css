@@ -1,0 +1,104 @@
+body {
+  padding: 0 10px;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background-color: #fff;
+}
+
+.loader::after {
+  content: "";
+  background-image: url(../../assets/veeshop-icon.png);
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  animation: loader 2s ease-in-out infinite alternate both;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.title {
+  position: relative;
+  margin: auto;
+}
+
+.fif-sec .row {
+  background-image: url('../../assets/fif-sec-bg.webp');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.six-sec .row {
+  background-image: url('../../assets/supplyBanner.webp');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: #fff !important;
+}
+
+.d-menu {
+  padding: 20px 16px !important;
+  min-width: 260px !important;
+  transform: translate(-90px, 86px) !important;
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1400px) {
+
+  .title::after,
+  .title::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    background-color: rgb(69, 76, 92);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .title::after {
+    right: 0;
+  }
+
+  .title::before {
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body{
+    padding: 0;
+  }
+}
